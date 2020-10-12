@@ -1,0 +1,52 @@
+body {
+  background-color: #fbfffe;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main__heading {
+  font-size: 48px;
+}
+
+.navigation {
+  font-size: 24px;
+}
+
+.header {
+  background-color: #ced4da;
+}
+
+.img {
+  max-width: 720px;
+  max-height: 1024px;
+}
+
+.about {
+  background-color: #ced4da;
+  color: #6c757d;
+}
+.about__heading {
+  font-size: 24px;
+}
+.about__article--paragraph {
+  color: #343a40;
+  font-size: 18px;
+}
+
+.media {
+  background-color: #ced4da;
+  color: #6c757d;
+}
+.media__heading {
+  font-size: 24px;
+}
+.media__article--paragraph {
+  color: #343a40;
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fbfffe;
+}
+
+/*# sourceMappingURL=main.css.map */
