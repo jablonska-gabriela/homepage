@@ -1,10 +1,19 @@
 body {
+  font-family: "Lato", Regular 400 italic;
   background-color: #fbfffe;
-  font-family: "Roboto Condensed", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header img" "main__heading img" "description img";
 }
 
+.main {
+  height: 100%;
+}
 .main__heading {
-  font-size: 48px;
+  font-size: 24px;
+  font-family: "Lato", Regular 400 italic;
+  padding: 55px;
 }
 
 .navigation {
@@ -12,17 +21,24 @@ body {
 }
 
 .header {
+  grid-area: header;
   background-color: #ced4da;
+  display: flex;
+  justify-content: space-around;
+  height: 64px;
 }
 
 .img {
-  max-width: 720px;
-  max-height: 1024px;
+  grid-area: img;
+  height: 100%;
+  display: flex;
+  align-self: flex-start;
 }
 
 .about {
   background-color: #ced4da;
   color: #6c757d;
+  height: 403px;
 }
 .about__heading {
   font-size: 24px;
@@ -35,6 +51,7 @@ body {
 .media {
   background-color: #ced4da;
   color: #6c757d;
+  height: 403px;
 }
 .media__heading {
   font-size: 24px;
@@ -47,6 +64,15 @@ body {
 .link {
   text-decoration: none;
   color: #fbfffe;
+  margin: 18px;
+}
+
+.description {
+  grid-area: description;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #ced4da;
 }
 
 /*# sourceMappingURL=main.css.map */
