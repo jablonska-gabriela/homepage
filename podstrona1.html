@@ -6,16 +6,18 @@
     <title>Document</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" /></head>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navigation">
+    <nav class="navigation navigation--js">
       <header class="header">
-        <a class="link" href="index.html">strona główna</a>
-        <a  class="link" href="#">poznaj mnie</a>
+        <a class="navigation__link" href="index.html">strona główna</a>
+        <a  class="navigation__link" href="podstrona1.html">poznaj mnie</a>
+      </nav>
+        <button class=" menu menu--js" aria-label="otwórz menu">⇶</button>
       </header>
-    </nav>
     <main class="main">
-      <header class="main__heading"><h1>Gabriela Jabłońska  -strona domowa</h1></header>
+      <header class="main__heading"><h1>Gabriela Jabłońska <br> -strona domowa</h1></header>
     <div class="description">
       <section class="about">
         <h2 class="first">lorem ipsum</h2>
@@ -33,5 +35,6 @@
       </section>
     </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -6,24 +6,27 @@
     <title>Document</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" /></head>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navigation">
+    <nav class="navigation navigation--js">
       <header class="header">
-        <a class="link" href="index.html">strona główna</a>
-        <a  class="link" href="#">poznaj mnie</a>
+        <a class="navigation__link" href="index.html">strona główna</a>
+        <a  class="navigation__link" href="podstrona1.html">poznaj mnie</a>
+      </nav>
+        <button class="menu menu--js" aria-label="otwórz menu">⇶</button>
       </header>
-    </nav>
-     <img class="img" src="121456347_4276497392363907_3787412919945691490_n.jpg">
+  
+     <img class="img" src="hmpg2.jpg">
     <main class="main">
-      <header class="main__heading"><h1>Gabriela Jabłońska  -strona domowa</h1></header>
+      <header class="main__heading"><h1>Gabriela Jabłońska <br> -strona domowa</h1></header>
     <div class="description">
       <section class="about">
         <h2 class="about__heading">o mnie</h2>
         <article class="about__article">
           <p class="about__article--paragraph">
             Jestem dwudziestolatką pasjonującą się sportem i zdrrowym stylem
-            życia. Staram się wkroczyć w świat IT próbując sił we frontend web
+            życia.<br> Staram się wkroczyć w świat IT próbując sił we frontend web
             developmencie.
           </p>
         </article>
@@ -31,10 +34,11 @@
       <section class="media">
         <h2 class="media__heading">moje media społecznościowe</h2>
         <article clas="media__article">
-          <p class="media__article--paragraph">faceboook instagram tookapic</p>
+          <p class="media__article--paragraph">faceboook <br> instagram <br> tookapic</p>
         </article>
       </section>
     </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

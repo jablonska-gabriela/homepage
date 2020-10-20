@@ -1,42 +1,31 @@
 body {
-  font-family: "Lato", Regular 400 italic;
   background-color: #fbfffe;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas:
-    "header img"
-    "main__heading img"
-    "description img";
+  font-family: "Commissioner", sans-serif;
 }
-.main {
-    height: 100%;
-  &__heading {
-    font-size: 24px;
-    font-family: "Lato", Regular 400 italic;
-    padding: 55px;
-  }
+.img {
+  display: flex;
+  flex-shrink: 20%;
 }
+
 .navigation {
   font-size: 24px;
+  text-decoration: none;
+  &__link {
+    margin: 0 0 16px;
+    text-decoration: none;
+    color: #fbfffe;
+  }
 }
 .header {
-  grid-area: header;
   background-color: #ced4da;
   display: flex;
   justify-content: space-around;
-  height: 64px;
 }
-.img {
-  grid-area: img;
-  height: 100%;
-  display: flex;
-  align-self: flex-start;
-}
+
 .about {
   background-color: #ced4da;
   color: #6c757d;
-  height: 403px;
   &__heading {
     font-size: 24px;
   }
@@ -48,7 +37,6 @@ body {
 .media {
   background-color: #ced4da;
   color: #6c757d;
-  height: 403px;
   &__heading {
     font-size: 24px;
   }
@@ -57,15 +45,93 @@ body {
     font-size: 18px;
   }
 }
-.link {
-  text-decoration: none;
-  color: #fbfffe;
-  margin: 18px;
+.menu {
+  border: none;
+  background: none;
 }
 .description {
-  grid-area: description;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
   background-color: #ced4da;
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+  }
+
+  .img {
+    max-width: 300px;
+    max-height: 275px;
+    display: block;
+   
+  }
+  .main {
+    &__heading {
+      width: 100%;
+      font-size: 18px;
+    }
+    width: 100%;
+  }
+  .media {
+    width: 100%;
+  }
+  .about {
+    width: 100%;
+  }
+  .header {
+    min-height: 60px;
+  }
+  .menu {
+    min-height: 60px;
+  }
+  .navigation {
+    display: none;
+    &--open {
+      display: block;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header img"
+      "main__heading img"
+      "description img";
+  }
+  .header {
+    grid-area: header;
+  }
+  .img {
+    grid-area: img;
+    height: 100%;
+    display: flex;
+    align-self: baseline;
+  }
+  .description {
+    grid-area: description;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .main {
+    height: 100%;
+    &__heading {
+      grid-area: main__heading;
+      font-size: 24px;
+      padding: 55px;
+    }
+  }
+  .media {
+    height: 403px;
+  }
+  .about {
+    height: 403px;
+  }
+  .menu {
+    border: none;
+    background: none;
+  }
+  .description {
+    background-color: #ced4da;
+  }
 }
