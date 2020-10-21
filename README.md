@@ -1,4 +1,4 @@
-![logo](../grafika.png)
+![logo](grafika.png)
 
 
 
